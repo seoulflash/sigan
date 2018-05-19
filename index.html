@@ -30,18 +30,22 @@
             #caro-1 {
                 background-image: url('img/main/main1.jpg');
                 background-size: cover;
+                background-repeat: no-repeat;
             }
             #caro-2 {
                 background-image: url('img/main/main2.jpg');
                 background-size: cover;
+                background-repeat: no-repeat;
             }
             #caro-3 {
                 background-image: url('img/main/main3.jpg');
                 background-size: cover;
+                background-repeat: no-repeat;
             }
             #caro-4 {
                 background-image: url('img/main/main4.jpg');
                 background-size: cover;
+                background-repeat: no-repeat;
             }
             /* F O O T E R */
         </style>
@@ -83,19 +87,19 @@
               <div class="carousel-fixed-item center">
                 <a class="btn waves-effect white black-text">자세히</a>
               </div>
-              <div class="carousel-item white white-text" href="#one!" id="caro-1">
+              <div class="carousel-item" href="#one!" id="caro-1">
                 <h2>First Panel</h2>
                 <p class="white-text">This is your first panel</p>
               </div>
-              <div class="carousel-item amber white-text" href="#two!" id="caro-2">
+              <div class="carousel-item" href="#two!" id="caro-2">
                 <h2>Second Panel</h2>
                 <p class="white-text">This is your second panel</p>
               </div>
-              <div class="carousel-item green white-text" href="#three!" id="caro-3">
+              <div class="carousel-item" href="#three!" id="caro-3">
                 <h2>Third Panel</h2>
                 <p class="white-text">This is your third panel</p>
               </div>
-              <div class="carousel-item blue white-text" href="#four!" id="caro-4">
+              <div class="carousel-item" href="#four!" id="caro-4">
                 <h2>Fourth Panel</h2>
                 <p class="white-text">This is your fourth panel</p>
               </div>
@@ -190,9 +194,8 @@
             $('.carousel.carousel-slider').carousel({
               fullWidth: true,
               duration: 500,
-
             });
-            $('.carousel').carousel();
+            $('.carousel.carousel-slider').carousel();
              setInterval(function() {
                $('.carousel').carousel('next');
            }, 5000);
